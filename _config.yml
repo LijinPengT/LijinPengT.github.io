@@ -14,11 +14,11 @@ defaults:
     values:
       image: true
 
-title: Minimalism
-name: minimalism
-description: Minimalism is a jekyll theme for minimalist
+title: Conquer
+name: DwyaneLee
+description: 一生，有一执念，选条路，走到黑，足矣。
 
-github: https://github.com/showzeng/Minimalism
+github: https://github.com/LijinPengT/LijinPengT.github.io
 rss: true
 
 plugins:
