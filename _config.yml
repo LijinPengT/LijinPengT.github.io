@@ -18,8 +18,12 @@ title: Conquer
 name: DwyaneLee
 description: 一生，有一执念，选条路，走到黑，足矣。
 
-github: https://github.com/LijinPengT/LijinPengT.github.io
+github: https://LijinPengT.github.io
 rss: true
+
+copyright_time: 2020
+show_excerpt: true
+email: mailto:1781062962@qq.com
 
 plugins:
   - rouge
