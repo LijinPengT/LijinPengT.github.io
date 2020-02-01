@@ -1,5 +1,5 @@
 ---
-title: 重回博客
+title: R.I.P to Kobe
 date:  2020-02-1 19:04:24 +0800
 category: conquer
 tags: daily
