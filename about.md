@@ -4,7 +4,23 @@ title: 关于
 reward: false
 ---
 
-### Minimalism
+### Conquer
+
+> A programmer from CUMT.
+
+#### Dwyane Lee
+
++ HTML/CSS/JavaScript/Vue
++ Python
+    + Django
+    + flask
++ Golang
+    + Gin
+    + beego
++ Android
+
+
+### 主题: Minimalism
 
 ---
 
