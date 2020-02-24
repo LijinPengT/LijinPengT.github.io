@@ -7,7 +7,7 @@ reward: false
 # Conquer
 
 <div style="float:right">
-    <img src="./docs/resume.jpg" width="200">
+    <img src="https://s2.ax1x.com/2020/02/24/3GDCpq.jpg" width="200">
 </div>
 
 > A programmer from CUMT.
