@@ -14,8 +14,8 @@ reward: false
 + [中国矿业大学翔工作室](https://atcumt.com)－技术副站
 + 本科/中国矿业大学/电子信息类
 + 英语水平/CET-6/517分
-+ 技术博客：https://lijinpengt.github.io/articles
-+ Github: https://github.com/LijinPengT
++ 技术博客：[https://lijinpengt.github.io/articles](https://lijinpengt.github.io/articles)
++ Github: [https://github.com/LijinPengT](https://github.com/LijinPengT)
 ## 技能清单
 + 前端开发：HTML5/CSS3/JavaScript/ES6
 + 后端开发：Python/Golang
@@ -25,10 +25,13 @@ reward: false
 + 数据库：MySQL/Redis
 + Git
 + 云和开放平台：微信应用平台
+
 ## 项目经历
 #### [勤工助学在线平台](https://github.com/LijinPengT/XgcOnline)
+
 ##### Situation
 + 勤工助学岗位申请需要填写大量表格，人员信息难以管理，需要一个在线平台集中管理。
+
 ##### Task
 + 开发前台功能模块
     + 基本模块
@@ -39,6 +42,7 @@ reward: false
     + 课程管理模块
     + 岗位管理模块
     + 认证和授权管理
+
 ##### Action
 + Python/Django
 + 开发环境搭建
@@ -50,10 +54,12 @@ reward: false
 + 基于class的view实现各功能模块
 + 常见网络攻击与防护
 + Django+uwsgi+nginx部署上线
+
 ##### Result
 + 勤工助学部门工作效率有效提高
 + 勤工助学岗位申请更加方便快捷
 + 服务矿大绝大多数的勤工助学生
+
 #### [矿大文库](https://wk.atcumt.com)
 ##### Situation
 + 大学课程繁多，资料纷繁复杂，网上资料良莠不齐，需要针对校园学生专门的文件共享平台
