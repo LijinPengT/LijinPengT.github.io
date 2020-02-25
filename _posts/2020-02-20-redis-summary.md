@@ -1,6 +1,6 @@
 ---
 title: Redis知识总结
-date:  2020-02-20 17:10:35 +0800
+date:  2020-01-15 17:10:35 +0800
 category: 数据库
 tags: Redis
 excerpt: Redis知识整理与总结

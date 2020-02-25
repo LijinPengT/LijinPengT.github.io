@@ -1,6 +1,6 @@
 ---
 title: R.I.P to Kobe
-date:  2020-02-1 19:04:24 +0800
+date:  2020-02-01 19:04:24 +0800
 category: conquer
 tags: daily
 excerpt: R.I.P to the legend, Kobe & Gigi
