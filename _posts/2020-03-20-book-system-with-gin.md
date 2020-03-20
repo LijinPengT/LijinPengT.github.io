@@ -6,7 +6,7 @@ tags: golang
 excerpt: Golang-Gin框架实现预约API
 ---
 
-# 参观矿大预约小程序后台API
+# [参观矿大预约小程序后台API](https://github.com/LijinPengT/GoBookSystem)
 
 ## Api-Docs(http://127.0.0.1:8080)
 
@@ -45,6 +45,7 @@ excerpt: Golang-Gin框架实现预约API
 2. 创建预约
     + /api/v1/books
     + POST
+
     ```json
         POST /api/v1/books HTTP/1.1
         Host: 127.0.0.1:8080
@@ -61,14 +62,15 @@ excerpt: Golang-Gin框架实现预约API
             "created_by": "openid",
             "state": 1
         }
-
     ```
+
     + book_id (int) (预约id)
     + date (string) (日期)
     + created_by (string)(创建人)
     + state      (int)(只能是0/1，表示是否禁用)
     + token      (调用api必须的token)
     + 返回结果
+
     ```json
         {
         "code": 200,
@@ -92,7 +94,6 @@ excerpt: Golang-Gin框架实现预约API
     + /api/v1/books
 
     + GET
-
     ```json
         http://127.0.0.1:8080/api/v1/books?token="$token"
     ```
@@ -108,12 +109,14 @@ excerpt: Golang-Gin框架实现预约API
             "msg":"ok"
         }
     ```
+
 4. 获取单个预约(删除单个预约也是传book_id, 方法为DELETE)
     + /api/v1/books/:book_id
     + GET
     ```json
         https://127.0.0.1:8080/api/v1/books/$book_id?token="$token"
     ```
+
     + 返回结果
     ```json
         {
