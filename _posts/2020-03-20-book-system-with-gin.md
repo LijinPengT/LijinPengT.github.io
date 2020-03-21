@@ -15,8 +15,8 @@ excerpt: Golang-Gin框架实现预约API
     + POST
     ```JSON
         {
-            "username": "admin",
-            "password": "book@cumt.com"
+            "username": "uname",
+            "password": "password"
         }
     ```
 
