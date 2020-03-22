@@ -43,7 +43,7 @@ excerpt: Golang-Gin框架实现预约API
     ```
 
 2. 创建预约
-    + /api/v1/books
+    + /api/v1/add_book
     + POST
 
     ```json
@@ -91,11 +91,11 @@ excerpt: Golang-Gin框架实现预约API
     ```
 
 3. 获取预约列表
-    + /api/v1/books
-
-    + GET
+    + /api/v1/fetch_books
++ GET
+    + 请求头中添加"token":  token
     ```json
-        http://127.0.0.1:8080/api/v1/books?token="$token"
+        http://127.0.0.1:8080/api/v1/fetch_books
     ```
 
     + 返回结果
@@ -111,12 +111,13 @@ excerpt: Golang-Gin框架实现预约API
     ```
 
 4. 获取单个预约(删除单个预约也是传book_id, 方法为DELETE)
-    + /api/v1/books/:book_id
+    + /api/v1/fetch_book/:book_id
     + GET
+    + 请求头中添加"token":  token
     ```json
-        https://127.0.0.1:8080/api/v1/books/$book_id?token="$token"
-    ```
-
+        https://127.0.0.1:8080/api/v1/fetch_book/$book_id
+```
+    
     + 返回结果
     ```json
         {
@@ -124,8 +125,8 @@ excerpt: Golang-Gin框架实现预约API
             "data":{},
             "msg":"ok"
         }
-    ```
-
+```
+    
 6. 编辑预约(开发ing)
 
 ## 登录模块
