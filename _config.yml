@@ -20,10 +20,19 @@ description: 一生，有一执念，选条路，走到黑，足矣。
 
 github: https://LijinPengT.github.io
 rss: true
-
+favicon: assets/img/favicon.ico
+avatar: assets/img/avatar.webp
 copyright_time: 2020
 show_excerpt: true
 email: mailto:1781062962@qq.com
+
+# --- 打赏设置 ---
+# 开启打赏，取消下面一行注解，并将微信和支付宝的收款二维码放置在 /assets/img/ 文件夹下
+# 同时图片的文件名必须为 alipay 和 wechat
+reward: true
+# 打赏的推广语
+reward_description: 如果你觉得本文海星，不妨请我喝杯咖啡
+# --- 打赏设置 --
 
 plugins:
   - rouge
