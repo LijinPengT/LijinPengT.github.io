@@ -1,5 +1,5 @@
 ---
-title: 隐匿传输开销测试模块的代码优化
+title: 隐匿传输代码优化
 date:  2020-03-24 20:55:55 +0800
 category: blockchain
 tags: hiddenTransmission
@@ -8,14 +8,16 @@ excerpt: 优化隐匿传输模块代码与开销测试模块代码
 
 # 隐匿传输模块的代码优化
 > 只是部分代码, 不能运行
+
 ## 隐匿传输固定开销模块
 > 固定开销模块还需要函数式编程优化, 等最终方案确定 
+
 ### 代码结构优化
 1. 代码布局优化
 3. 使用let声明变量, 防止全局污染
 4. consolo关键信息, 便于理解每一块的数据都是哪一部分的
 
-+ Old-Code, 不光测试的时间不对, 而且测试promise函数执行的时间的方式也有问题.
++ Old-Code(不光测试的时间不对, 而且测试promise函数执行的时间的方式也有问题)
     ```JavaScript
     ...
     var startTime,endTime; 
@@ -93,7 +95,7 @@ excerpt: 优化隐匿传输模块代码与开销测试模块代码
     console.log("总的消耗时间" + (endDate-startDate) +'ms');
     ```
 
-+ New-Code
++ New-Code(打印必要信息, 结构清晰, 时间测试方法正确)
     ```JavaScript
         console.log("--------------------------");
         console.log("发送方计算加密秘钥rA");
