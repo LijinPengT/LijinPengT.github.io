@@ -24,9 +24,9 @@ reward: false
 + Web框架：Django/Gin/Beego
 + 前端框架：Bootstrap/Vue.js
 + 前端工具：webpack/npm
-+ 数据库：MySQL/Redis
-+ Git
-+ 云和开放平台：微信应用平台
++ 数据库：MySQL/Redis/MongoDB
++ Git协作开发
++ 微信公众平台
 
 ## 项目经历
 #### [勤工助学在线平台](https://github.com/LijinPengT/XgcOnline)
