@@ -20,7 +20,6 @@ excerpt: Python-Django项目
 
 ```html
 <!DOCTYPE html>
-<!-- {% load staticfiles %} 这一行暂时注释了，不过之后要加上 -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
