@@ -18,9 +18,9 @@ excerpt: Python-Django项目
 + 搭建html页面
     + index.html引入jquery，bootstrap等需要的库，如果不使用css框架可以不用引入bootstrap
 
-```python
+```html
 <!DOCTYPE html>
-{% load staticfiles %}
+<!-- {% load staticfiles %} 这一行暂时注释了，不过之后要加上 -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
