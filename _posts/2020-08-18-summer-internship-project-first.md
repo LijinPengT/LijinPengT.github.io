@@ -17,16 +17,16 @@ excerpt: Python-Django项目
 
 + 搭建html页面
     + index.html引入jquery，bootstrap等需要的库，如果不使用css框架可以不用引入bootstrap
+    + 要注意静态资源的引入，[django的方式](https://juejin.im/entry/6844903587470917646)
 
-```
+```html
 <!DOCTYPE html>
-{% load staticfiles %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SDN-QoS</title>
-    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 <div class="container-fluid">
@@ -132,7 +132,7 @@ excerpt: Python-Django项目
           </tr>
         </thead>
         <tbody>
-	{% for item in table %}
+	<!-- 这个用for循环读取 -->
           <tr>
             <th scope="row">
                 <div class="custom-control custom-switch">
@@ -144,7 +144,6 @@ excerpt: Python-Django项目
             <td>{{item.match}}</td>
             <td>{{item.instruction}}</td>
           </tr>
-	{% endfor %}
         </tbody>
       </table>
 </div>
