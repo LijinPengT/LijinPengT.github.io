@@ -3,7 +3,7 @@ title: 2020暑期实训项目一流程简介
 date:  2020-08-18 15:28:20 +0800
 category: 后端
 tags: Python
-excerpt: Python-Django项目
+excerpt: 流表下发及管理
 ---
 
 
