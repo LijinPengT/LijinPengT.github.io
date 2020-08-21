@@ -80,9 +80,10 @@ DATABASES = {
 
 #### QosApp/templates/index.html(省去了head)
 
+
 + 注意流表，meter表管理部分的表格tbody部分代码
-![flowtable](/imgs/flowtable.png)
-![metertable](/imgs/metertable.png)
+![flowtable](https://s1.ax1x.com/2020/08/21/dN0zIe.png)
+![metertable](https://s1.ax1x.com/2020/08/21/dN0xaD.png)
 
 ```html
 <body>
