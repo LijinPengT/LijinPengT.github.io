@@ -136,13 +136,13 @@ excerpt: 流表下发及管理
           <tr>
             <th scope="row">
                 <div class="custom-control custom-switch">
-                    <input type="checkbox" class="custom-control-input" name="switch_id" id='{{forloop.counter}}' value="{{item.flow_node}}">
-                    <label class="custom-control-label" for="{{forloop.counter}}">{{item.flow}}</label>
+                    <input type="checkbox" class="custom-control-input" name="switch_id" id='forloop.counter' value="item.flow_node">
+                    <label class="custom-control-label" for="forloop.counter">item.flow</label>
                 </div>
             </th>
-            <td>{{item.priority}}</td>
-            <td>{{item.match}}</td>
-            <td>{{item.instruction}}</td>
+            <td>item.priority</td>
+            <td>item.match</td>
+            <td>item.instruction</td>
           </tr>
         </tbody>
       </table>
