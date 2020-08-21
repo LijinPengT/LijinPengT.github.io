@@ -434,3 +434,5 @@ python manage.py migrate
 python mange.py runserver
 # 打开你的url
 ```
+
+

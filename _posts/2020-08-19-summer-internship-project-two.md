@@ -8,6 +8,13 @@ excerpt: Meter表下发及管理
 
 # 2020暑期实训项目二
 
+## 创建项目
+
+```shell
+django-admin startproject QosSite
+django-admin startapp QosApp
+```
+
 ## 项目功能
 
 + 前端系统页面
@@ -25,7 +32,10 @@ excerpt: Meter表下发及管理
 
 ### 配置文件设置
 
-+ settings.py
++ QosSite/settings.py
+    + 添加app到app列表中
+    + 修改一些配置
+    + 配置数据库信息
 
 ```python
 ***
@@ -68,7 +78,11 @@ DATABASES = {
 
 ### 前端
 
-#### index.html(省去了head)
+#### QosApp/templates/index.html(省去了head)
+
++ 注意流表，meter表管理部分的表格tbody部分代码
+![flowtable](/imgs/flowtable.png)
+![metertable](/imgs/metertable.png)
 
 ```html
 <body>
@@ -208,20 +222,7 @@ DATABASES = {
           </tr>
         </thead>
         <tbody>
-          <!-- 别忘了for循环 -->
-          <tr>
-            <th scope="row">
-                <div class="custom-control custom-switch">
-                    <input type="checkbox" class="custom-control-input" name="in_port" id="forloop.counter" value="item.inport">
-                    <label class="custom-control-label" for="forloop.counter">item.flow</label>
-                </div>
-            </th>
-            <td>item.flow_node</td>
-            <td>item.priority</td>
-            <td>item.match</td>
-            <td>item.instruction</td>
-          </tr>
-
+         <!--图片在最开始-->
         </tbody>
       </table>
 
@@ -242,18 +243,8 @@ DATABASES = {
           </tr>
         </thead>
         <tbody>
-            <!-- 别忘了for循环 -->
-          <tr>
-            <th scope="row">
-                <div class="custom-control custom-switch">
-                    <input type="checkbox" class="custom-control-input" name="meter_id" id="'meter' + meter.meter" value="meter.meter">
-                    <label class="custom-control-label" for="'meter' + meter.meter">meter.meter</label>
-                </div>
-            </th>
-            <td>meter.meterType</td>
-            <td>meter.bandRate</td>
-            <td>meter.banSize</td>
-          </tr>
+        <!--图片在最开始-->
+         
         </tbody>
       </table>
 </div>
@@ -263,7 +254,7 @@ DATABASES = {
 </body>
 ```
 
-#### index.js(对比项目一的js代码进行了一些优化)
+#### QosApp/static/js/index.js(对比项目一的js代码进行了一些优化)
 
 ```javascript
 // 检查action的值
@@ -413,7 +404,10 @@ $('#del_meter').click(function(e){
 });
 ```
 
-+ urls.py QosApp/urls.py
++ QosSite/urls.py QosApp/urls.py
+    + 项目总的urls，include app的urls，方便开发和维护
+    + app的urls里面，添加项目需要用到的urls
+    + 注意import的问题
 
 ```python
 # QosSite/urls.py
@@ -439,7 +433,8 @@ urlpatterns = [
 ]
 ```
 
-+ views.py(对比项目一，对数据的接收与处理和函数执行返回值的处理进行了优化)
++ QosApp/views.py(对比项目一，对数据的接收与处理和函数执行返回值的处理进行了优化)
+    + 代码已经添加了比较详细的注释
 
 ```python
 import json
@@ -448,6 +443,7 @@ from django.http import JsonResponse
 from django.core import serializers
 from .models import Table, Meter
 
+# 注意从odl引入的函数
 from .odl import add_flow, flow_delete, add_meter, meter_delete
 
 # Create your views here.
@@ -585,7 +581,8 @@ def DelMeter(request):
 
 ```
 
-+ odl.py(对流表，meter表的删除和添加进行了优化，返回值进行了优化)
++ QosApp/odl.py(对流表，meter表的删除和添加进行了优化，返回值进行了优化)
+    + 注意import进来了Table和Meter，进行数据库存储操作
 
 ```python
 import json
@@ -744,7 +741,8 @@ def add_meter(meter):
     return res
 ```
 
-+ models.py(定义主要部分，不重要的可以抽象成一个字段)
++ QosApp/models.py(定义主要部分，不重要的可以抽象成一个字段)
+    + 代码添加了注释
 
 ```python
 class Table(models.Model):
@@ -800,4 +798,8 @@ class Meter(models.Model):
 + odl.py
     + 删除流表后面的id必须是添加流表时设置的id，不能都是1
     + 添加流表和meter表时，url要拼接对，属性也要设置正确
-    
+
+
+## Source Code(Github地址)
+
++ [SDN-Qos](https://github.com/LijinPengT/SDN-Qos)
