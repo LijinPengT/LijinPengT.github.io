@@ -64,4 +64,5 @@ excerpt: 项目开发常见问题
 + 出现报错，一定自己先看报错信息最关键的部分，一般都与自己的文件有关
 + 除了流表下发的问题，其他基本可以靠百度解决
 
+[项目二流程](https://lijinpengt.github.io/后端/2020/08/19/summer-internship-project-two.html)
 
