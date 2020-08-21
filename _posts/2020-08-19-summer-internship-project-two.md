@@ -208,7 +208,7 @@ DATABASES = {
           </tr>
         </thead>
         <tbody>
-            {% for item in table %}
+            <!-- {% for item in table %} -->
           <tr>
             <th scope="row">
                 <div class="custom-control custom-switch">
@@ -221,7 +221,7 @@ DATABASES = {
             <td>{{item.match}}</td>
             <td>{{item.instruction}}</td>
           </tr>
-	{% endfor %}
+	<!-- {% endfor %} -->
         </tbody>
       </table>
 
@@ -242,7 +242,7 @@ DATABASES = {
           </tr>
         </thead>
         <tbody>
-            {% for meter in meters %}
+            <!-- {% for meter in meters %} -->
           <tr>
             <th scope="row">
                 <div class="custom-control custom-switch">
@@ -254,7 +254,7 @@ DATABASES = {
             <td>{{meter.bandRate}}</td>
             <td>{{meter.banSize}}</td>
           </tr>
-	{% endfor %}
+	        <!-- {% endfor %} -->
         </tbody>
       </table>
 </div>
