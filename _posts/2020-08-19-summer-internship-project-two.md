@@ -208,7 +208,7 @@ DATABASES = {
           </tr>
         </thead>
         <tbody>
-            <!-- {% for item in table %} -->
+          <!-- 别忘了for循环 -->
           <tr>
             <th scope="row">
                 <div class="custom-control custom-switch">
@@ -221,7 +221,7 @@ DATABASES = {
             <td>{{item.match}}</td>
             <td>{{item.instruction}}</td>
           </tr>
-	<!-- {% endfor %} -->
+
         </tbody>
       </table>
 
@@ -242,7 +242,7 @@ DATABASES = {
           </tr>
         </thead>
         <tbody>
-            <!-- {% for meter in meters %} -->
+            <!-- 别忘了for循环 -->
           <tr>
             <th scope="row">
                 <div class="custom-control custom-switch">
@@ -254,7 +254,6 @@ DATABASES = {
             <td>{{meter.bandRate}}</td>
             <td>{{meter.banSize}}</td>
           </tr>
-	        <!-- {% endfor %} -->
         </tbody>
       </table>
 </div>
