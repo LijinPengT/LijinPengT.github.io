@@ -212,14 +212,14 @@ DATABASES = {
           <tr>
             <th scope="row">
                 <div class="custom-control custom-switch">
-                    <input type="checkbox" class="custom-control-input" name="in_port" id="{{forloop.counter}}" value="{{item.inport}}">
-                    <label class="custom-control-label" for="{{forloop.counter}}">{{item.flow}}</label>
+                    <input type="checkbox" class="custom-control-input" name="in_port" id="forloop.counter" value="item.inport">
+                    <label class="custom-control-label" for="forloop.counter">item.flow</label>
                 </div>
             </th>
-            <td>{{item.flow_node}}</td>
-            <td>{{item.priority}}</td>
-            <td>{{item.match}}</td>
-            <td>{{item.instruction}}</td>
+            <td>item.flow_node</td>
+            <td>item.priority</td>
+            <td>item.match</td>
+            <td>item.instruction</td>
           </tr>
 
         </tbody>
@@ -246,13 +246,13 @@ DATABASES = {
           <tr>
             <th scope="row">
                 <div class="custom-control custom-switch">
-                    <input type="checkbox" class="custom-control-input" name="meter_id" id="'meter' + {{meter.meter}}" value="{{meter.meter}}">
-                    <label class="custom-control-label" for="'meter' + {{meter.meter}}">{{meter.meter}}</label>
+                    <input type="checkbox" class="custom-control-input" name="meter_id" id="'meter' + meter.meter" value="meter.meter">
+                    <label class="custom-control-label" for="'meter' + meter.meter">meter.meter</label>
                 </div>
             </th>
-            <td>{{meter.meterType}}</td>
-            <td>{{meter.bandRate}}</td>
-            <td>{{meter.banSize}}</td>
+            <td>meter.meterType</td>
+            <td>meter.bandRate</td>
+            <td>meter.banSize</td>
           </tr>
         </tbody>
       </table>
