@@ -14,15 +14,15 @@ defaults:
     values:
       image: true
 
-title: Conquer
-name: DwyaneLee
+title: ConquerLab
+name: DwyaneLi
 description: 一生，有一执念，选条路，走到黑，足矣。
 
 github: https://LijinPengT.github.io
 rss: true
 favicon: assets/img/favicon.ico
 avatar: assets/img/avatar.webp
-copyright_time: 2020
+copyright_time: 2022
 show_excerpt: true
 email: mailto:1781062962@qq.com
 

@@ -6,24 +6,26 @@ reward: false
 
 > A programmer from CUMT.
 
-## 联系方式
-+ 手   机：13115213013
-+ Email：legend_peng@cumt.edu.cn
-
 ## 个人信息
 + 李金澎/男/2000
 + [中国矿业大学翔工作室](https://atcumt.com)－技术副站
-+ 本科/中国矿业大学/电子信息类
-+ 英语水平/CET-6/517分
++ 本科/ 中国矿业大学信控学院/ 电子信息类
++ 硕士/ 中国矿业大学计算机学院/ 计算机科学与技术 (区块链与隐私保护，信息安全)
++ 英语水平/ CET-6/ 517分
 + 技术博客：[https://lijinpengt.github.io/articles](https://lijinpengt.github.io/articles)
 + Github: [https://github.com/LijinPengT](https://github.com/LijinPengT)
 
+## 联系方式
++ 手   机：18852186980
++ Email：1781062962@qq.com
+
 ## 技能清单
++ 区块链：以太坊、solidity、公钥密码学、基于配对的密码学
 + 前端开发：HTML5/CSS3/JavaScript/ES6
-+ 后端开发：Python/Golang
-+ Web框架：Django/Gin/Beego
-+ 前端框架：Bootstrap/Vue.js
-+ 前端工具：webpack/npm
++ 后端开发：Golang/Python/Node.js
++ Web框架：Gin/Beego/Django
++ 前端框架：Bootstrap/Vue.js/React.js
++ 前端工具：webpack/Sass
 + 数据库：MySQL/Redis/MongoDB
 + Git协作开发
 + 微信公众平台
